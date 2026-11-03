@@ -1,8 +1,10 @@
 class Ferb < Formula
   desc "Always-on conversation capture and transcription"
   homepage "https://ferb.live"
-  url "https://registry.npmjs.org/@disjoint/ferb/-/ferb-0.1.0.tgz"
-  sha256 "<sha256 of that tarball>"
+  # Packed from the private ferb repo's cli/ and attached to this tap's
+  # releases, so installing needs no access to the source repo.
+  url "https://github.com/disjointinc/homebrew-tap/releases/download/ferb-0.1.0/disjoint-ferb-0.1.0.tgz"
+  sha256 "11ccce0291ae6efb3584c04c9efb0776b8ae2e6c27d3bd64d741c4fadf217f24"
 
   depends_on "node"
   depends_on "sox"
